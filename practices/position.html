@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Position Practice</title>
+    </head>
+    <body style =
+        "height: 3000px;
+        padding-top: 60px;
+        padding-left: 75px;">
+
+        <div style ="
+            background-color: black;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 50px;">
+            header
+        </div>
+        <div style="
+            background-color: lightblue;
+            height: 200px;
+            width: 200px;
+            position: relative">
+                div1
+                <div style = "
+                position: absolute;
+                background-color: black;
+                color: white;
+                right: 0;
+                top: 0;">
+                absolute
+                </div>
+        </div>
+        <div style="
+            background-color: lightpink;
+            height: 200px;
+            width:200px;">div2</div>
+        
+        <div style = "
+            background-color: green;
+            color: white;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            top: 50px;
+            width: 72px;"
+        >
+            <div style = "
+                position: absolute;
+                background-color: lightblue;
+                left: 10px;
+                top: 10px;">
+                absolute
+            </div>
+            sidebar
+        </div>
+
+        <div style = "
+            position: absolute;
+            background-color: blue;
+            left: 10px;
+            top: 10px;">
+            absolute
+        </div>
+    </body>
+</html>
+
+<!--
+    top speficies the distance from top
+    left specifies the distance from left
+    bottom/right the same
+    if oppositie directions are set, the element stretch
+    resize with page: use left/right/bottom...
+
+    position fixed: the position in the page doesn't move when scrolling down
+    fixed: placed in the browser window, which doesn't move
+    absolute: placed on the page, which moves
+
+
+    z-index, default 0; the bigger one will appear in the front
+
+    we can put an absolute element inside a fixed element; so the distance relative will be of the fixed element
+    it will only move with element. do close button
+
+    put absolute inside fixed: absolute element doesnt move
+    put absolute inside relative: moves with the page but remain in the same position relative to the relative
+
+-->
